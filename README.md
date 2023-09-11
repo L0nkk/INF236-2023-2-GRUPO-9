@@ -12,4 +12,4 @@ Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurick
 Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 ## Videos
-* [Video presentación Hito 1](https://www.youtube.com/](https://www.youtube.com/watch?v=hvjuNG07QAA)https://www.youtube.com/watch?v=hvjuNG07QAA)
+* [Video presentación Hito 1](https://www.youtube.com/](https://www.youtube.com/watch?v=hvjuNG07QAA)
