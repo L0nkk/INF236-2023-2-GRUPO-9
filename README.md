@@ -1,16 +1,28 @@
-# Grupo 9
-Este es el repositorio del *Grupo 9*, cuyos integrantes son:
-* Franco Alday
-* Nicolas Bello
-* Vicente Mackenzie
-* **Tutor**: Rodrigo Ramírez
-
-# Wiki
-Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki)
-
-## Aspectos técnicos relevantes
+# mern-stack-example
 Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
-## Videos
-* [Video presentación Hito 1](https://www.youtube.com/watch?v=hvjuNG07QAA)
-* [Video ejemplo Hito 4](https://youtu.be/V2Hgaptnrzs)
+[![CI](https://github.com/mongodb-developer/mern-stack-example/actions/workflows/main.yaml/badge.svg)](https://github.com/mongodb-developer/mern-stack-example/actions/workflows/main.yaml)
+
+## How To Run
+Create the file `mern/server/config.env` with your Atlas URI and the server port:
+```
+ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/
+```
+
+Start server:
+```
+cd mern/server
+npm install
+npm start
+```
+
+Start Web server
+```
+cd mern/client
+npm install
+npm start
+```
+
+## Disclaimer
+
+Use at your own risk; not a supported MongoDB product
