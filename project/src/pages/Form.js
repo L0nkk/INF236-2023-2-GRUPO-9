@@ -35,8 +35,10 @@ class PersonalInfoForm extends Component {
     this.state = {
       name: '',
       rut: '',
-      dob: '',
-      address: '',
+      fecha: '',
+      hora: '',
+      med: '',
+      obs: '',
     };
   }
 
@@ -78,32 +80,60 @@ class PersonalInfoForm extends Component {
             required
           />
 
-          <label htmlFor="dob">Fecha examen:</label>
+          <label htmlFor="fecha">Fecha examen:</label>
           <input
             type="date"
-            id="dob"
-            name="dob"
-            value={this.state.dob}
+            id="fecha"
+            name="fecha"
+            value={this.state.fecha}
             onChange={this.handleInputChange}
             style={inputStyle}
             required
           />
 
           <label htmlFor="Hora">Hora examen:</label>
-          <input type="time" id="appt" name="appt" style={inputStyle} required />
+          <select
+          id="hora"
+          name="hora"
+          value={this.state.hora}
+          onChange={this.handleInputChange}
+          style={inputStyle}
+          required
+          >
+            <option value="1">8:30</option>
+            <option value="2">9:00</option>
+            <option value="3">9:30</option>
+            <option value="4">10:00</option>
+            <option value="5">10:30</option>
+            <option value="6">11:00</option>
+            <option value="7">11:30</option>
+            <option value="8">12:00</option>
+            <option value="9">12:30</option>
+            <option value="10">14:30</option>
+            <option value="11">15:00</option>
+            <option value="12">15:30</option>
+            <option value="13">16:00</option>
+          </select>
 
-          <label htmlFor="Med">Nombre Medico:</label>
-          <input type="text" id="Med" name="Med" style={inputStyle} required />
+          <label htmlFor="med">Nombre Medico:</label>
+          <input
+            type="text"
+            id="med"
+            name="med"
+            value={this.state.med}
+            onChange={this.handleInputChange}
+            style={inputStyle}
+            required
+          />
 
-          <label htmlFor="address">Motivo:</label>
+          <label htmlFor="obs">Observaciones:</label>
           <textarea
-            id="address"
-            name="address"
-            value={this.state.address}
+            id="obs"
+            name="obs"
+            value={this.state.obs}
             onChange={this.handleInputChange}
             style={inputStyle}
             rows="4"
-            required
           />
 
           <button type="submit" style={buttonStyle}>Submit</button>
