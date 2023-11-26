@@ -14,3 +14,4 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 ## Videos
 * [Video presentación Hito 1](https://www.youtube.com/watch?v=hvjuNG07QAA)
 * [Video ejemplo Hito 4](https://youtu.be/V2Hgaptnrzs)
+* [Video presentación Hito 6 y 7](https://www.youtube.com/watch?v=k5BQrs4SamM)
