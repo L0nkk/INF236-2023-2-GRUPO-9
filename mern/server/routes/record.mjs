@@ -30,6 +30,7 @@ router.post("/", async (req, res) => {
     med: req.body.med,
     obs: req.body.obs,
     name: req.body.name,
+    tipo: req.body.tipo,
   };
   let collection = await db.collection("horas");
   let result = await collection.insertOne(newDocument);
@@ -41,9 +42,13 @@ router.patch("/:id", async (req, res) => {
   const query = { _id: new ObjectId(req.params.id) };
   const updates =  {
     $set: {
-      name: req.body.name,
-      position: req.body.position,
-      level: req.body.level
+      rut: req.body.rut,
+    fecha: req.body.fecha,
+    hora: req.body.hora,
+    med: req.body.med,
+    obs: req.body.obs,
+    name: req.body.name,
+    tipo: req.body.tipo,
     }
   };
 

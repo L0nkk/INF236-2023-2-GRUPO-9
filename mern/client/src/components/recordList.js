@@ -5,6 +5,7 @@ const Record = (props) => (
  <tr>
    <td>{props.record.name}</td>
    <td>{props.record.rut}</td>
+   <td>{props.record.tipo}</td>
    <td>{props.record.fecha}</td>
    <td>{props.record.hora}</td>
    <td>{props.record.med}</td>
@@ -77,11 +78,12 @@ export default function RecordList() {
          <tr>
            <th>Name</th>
            <th>Rut</th>
+           <th>Tipo</th>
            <th>Fecha</th>
            <th>Bloque</th>
            <th>Medico</th>
            <th>Obs</th>
-           <th>Action</th>
+           <th>Accion</th>
          </tr>
        </thead>
        <tbody>{recordList()}</tbody>

@@ -38,6 +38,7 @@ export default function Create() {
     hora: "",
     med: "",
     obs: "",
+    tipo: "",
  });
 
  const navigate = useNavigate();
@@ -68,7 +69,7 @@ export default function Create() {
      return;
    });
 
-   setForm({ name: "", rut: "", fecha: "", hora:"", med:"", obs:"" });
+   setForm({ name: "", rut: "", fecha: "", hora:"", med:"", obs:"", tipo:"" });
    navigate("/");
  }
 
@@ -100,6 +101,21 @@ export default function Create() {
             required
           />
 
+<label htmlFor="Hora">Tipo examen:</label>
+          <select
+          id="tipo"
+          name="tipo"
+          onChange={(e) => updateForm({ tipo: e.target.value })}
+          style={inputStyle}
+          required
+          >
+            <option value="" selected disabled hidden>Choose here</option>
+            <option value="laboratorio">laboratorio</option>
+            <option value="genetico">genetico</option>
+            <option value="sangre">sangre</option>
+          </select>
+
+
 <label htmlFor="fecha">Fecha examen:</label>
           <input
             type="date"
@@ -120,19 +136,19 @@ export default function Create() {
           required
           >
             <option value="" selected disabled hidden>Choose here</option>
-            <option value="1">8:30</option>
-            <option value="2">9:00</option>
-            <option value="3">9:30</option>
-            <option value="4">10:00</option>
-            <option value="5">10:30</option>
-            <option value="6">11:00</option>
-            <option value="7">11:30</option>
-            <option value="8">12:00</option>
-            <option value="9">12:30</option>
-            <option value="10">14:30</option>
-            <option value="11">15:00</option>
-            <option value="12">15:30</option>
-            <option value="13">16:00</option>
+            <option value="[8:30]">8:30</option>
+            <option value="[9:00]">9:00</option>
+            <option value="[9:30]">9:30</option>
+            <option value="[10:00]">10:00</option>
+            <option value="[10:30]">10:30</option>
+            <option value="[11:00]">11:00</option>
+            <option value="[11:30]">11:30</option>
+            <option value="[12:00]">12:00</option>
+            <option value="[12:30]">12:30</option>
+            <option value="[14:30]">14:30</option>
+            <option value="[15:00]">15:00</option>
+            <option value="[15:30]">15:30</option>
+            <option value="[16:00]">16:00</option>
           </select>
 
           <label htmlFor="med">Nombre Medico:</label>
