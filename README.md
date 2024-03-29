@@ -1,5 +1,11 @@
-# Grupo 9
-Este es el repositorio del *Grupo 9*, cuyos integrantes son:
+# Grupo 7
+Este es el repositorio del *Grupo 7*, cuyos integrantes son:
+* Franco Alday
+* Nangel Coello
+* Vicente Mackenzie
+* Francisca Romero
+
+ex-grupo 9:
 * Franco Alday
 * Nicolas Bello
 * Vicente Mackenzie
