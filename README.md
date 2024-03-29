@@ -11,6 +11,9 @@ ex-grupo 9:
 * Vicente Mackenzie
 * **Tutor**: Rodrigo Ramírez
 
+Para el proyecto de INF-225 2024-1 se utilizará el proyecto presente es este repositorio, correspondiente al grupo 9 paralelo 201.
+Este proyecto es capaz de agendar y visualizar horas cuidando todas sus caracteristicas.
+
 # Wiki
 Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki)
 
