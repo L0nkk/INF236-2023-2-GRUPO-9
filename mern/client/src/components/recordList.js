@@ -83,7 +83,7 @@ export default function RecordList() {
            <th>Bloque</th>
            <th>Medico</th>
            <th>Obs</th>
-           <th>Accion</th>
+           <th>Action</th>
          </tr>
        </thead>
        <tbody>{recordList()}</tbody>

@@ -56,6 +56,7 @@ export default function Create() {
 
    // When a post request is sent to the create url, we'll add a new record to the database.
    const newPerson = { ...form };
+   const data = { ...form };
 
    await fetch("http://localhost:5050/record", {
      method: "POST",
@@ -63,6 +64,18 @@ export default function Create() {
        "Content-Type": "application/json",
      },
      body: JSON.stringify(newPerson),
+   })
+   .catch(error => {
+     window.alert(error);
+     return;
+   });
+
+   await fetch("http://localhost:5050/pacientes", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+     },
+     body: JSON.stringify(data),
    })
    .catch(error => {
      window.alert(error);

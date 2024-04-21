@@ -23,6 +23,7 @@ router.get("/:id", async (req, res) => {
 
 // This section will help you create a new record.
 router.post("/", async (req, res) => {
+  // Extract required fields for new document
   let newDocument = {
     rut: req.body.rut,
     fecha: req.body.fecha,
@@ -32,10 +33,29 @@ router.post("/", async (req, res) => {
     name: req.body.name,
     tipo: req.body.tipo,
   };
-  let collection = await db.collection("horas");
-  let result = await collection.insertOne(newDocument);
-  res.send(result).status(204);
+
+  try {
+    // Insert into "horas" collection
+    let collection = await db.collection("horas");
+    let result = await collection.insertOne(newDocument);
+
+    // Insert "rut" and "name" into "paciente" collection
+    collection = await db.collection("pacientes");
+    let paciente = {
+      rut: req.body.rut,
+      name: req.body.name,
+      createdAt : new Date(),
+    };
+    result = await collection.insertOne(paciente);
+    // Send response
+    res.status(204).send();
+  } catch (error) {
+    // Handle errors
+    console.error(error);
+    res.status(500).send("Internal Server Error");
+  }
 });
+
 
 // This section will help you update a record by id.
 router.patch("/:id", async (req, res) => {
