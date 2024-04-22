@@ -4,6 +4,8 @@ Este es el repositorio del *Grupo 7*, cuyos integrantes son:
 * Nangel Coello
 * Vicente Mackenzie
 * Francisca Romero
+* **Ayudante**: Maximiliano Sepulveda
+* **Profesor**: Ricardo Salas
 
 ex-grupo 9:
 * Franco Alday
