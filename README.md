@@ -14,6 +14,14 @@ ex-grupo 9:
 Para el proyecto de INF-225 2024-1 se utilizará el proyecto presente es este repositorio, correspondiente al grupo 9 paralelo 201.
 Este proyecto es capaz de agendar y visualizar horas cuidando todas sus caracteristicas.
 
+## Como Ejecutar
+    
+
+    1. en la dirrecion mern/server/ ejecutar "npm install" y "npm start"
+        (*)ERROR la base de datos puede estar inactiva, avisar y la subo
+
+    2. en la dirrecion mern/client/ ejecutar "npm install" y "npm start"
+ 
 # Wiki
 Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki)
 
