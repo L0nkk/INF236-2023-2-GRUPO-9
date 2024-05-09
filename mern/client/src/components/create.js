@@ -31,7 +31,7 @@ const buttonStyle = {
 };
 
 export default function Create() {
- const [form, setForm] = useState({
+  const [form, setForm] = useState({
     name: "",
     rut: "",
     fecha: "",
@@ -39,71 +39,71 @@ export default function Create() {
     med: "",
     obs: "",
     tipo: "",
- });
+  });
 
- const navigate = useNavigate();
+  const navigate = useNavigate();
 
  // These methods will update the state properties.
- function updateForm(value) {
-   return setForm((prev) => {
-     return { ...prev, ...value };
-   });
- }
+  function updateForm(value) {
+    return setForm((prev) => {
+      return { ...prev, ...value };
+    });
+  }
 
- // This function will handle the submission.
- async function onSubmit(e) {
-   e.preventDefault();
+  // This function will handle the submission.
+  async function onSubmit(e) {
+    e.preventDefault();
 
-   // When a post request is sent to the create url, we'll add a new record to the database.
-   const newPerson = { ...form };
-   const data = { ...form };
+    // When a post request is sent to the create url, we'll add a new record to the database.
+    const newPerson = { ...form };
+    const data = { ...form };
 
-   await fetch("http://localhost:5050/record", {
-     method: "POST",
-     headers: {
-       "Content-Type": "application/json",
-     },
-     body: JSON.stringify(newPerson),
-   })
-   .catch(error => {
-     window.alert(error);
-     return;
-   });
+    await fetch("http://localhost:5050/record", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newPerson),
+    })
+    .catch(error => {
+      window.alert(error);
+      return;
+    });
 
-   await fetch("http://localhost:5050/pacientes", {
-     method: "POST",
-     headers: {
-       "Content-Type": "application/json",
-     },
-     body: JSON.stringify(data),
-   })
-   .catch(error => {
-     window.alert(error);
-     return;
-   });
+    await fetch("http://localhost:5050/pacientes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+    .catch(error => {
+      window.alert(error);
+      return;
+    });
 
-   setForm({ name: "", rut: "", fecha: "", hora:"", med:"", obs:"", tipo:"" });
-   navigate("/");
- }
+    setForm({ name: "", rut: "", fecha: "", hora:"", med:"", obs:"", tipo:"" });
+    navigate("/");
+  }
 
- // This following section will display the form that takes the input from the user.
- return (
+  // This following section will display the form that takes the input from the user.
+  return (
   <div>
         <h1>Agendar hora</h1>
         <form style={formStyle} onSubmit={onSubmit}>
-       <div className="form-group">
-         <label htmlFor="name">Nombre paciente:</label>
-         <input
-           type="text"
-           id="name"
-           className="form-control"
-           style={inputStyle}
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
-           required
-         />
-       </div>
-       <label htmlFor="rut">RUT:</label>
+        <div className="form-group">
+          <label htmlFor="name">Nombre paciente:</label>
+          <input
+            type="text"
+            id="name"
+            className="form-control"
+            style={inputStyle}
+            value={form.name}
+            onChange={(e) => updateForm({ name: e.target.value })}
+            required
+          />
+        </div>
+        <label htmlFor="rut">RUT:</label>
           <input
             type="text"
             id="rut"
