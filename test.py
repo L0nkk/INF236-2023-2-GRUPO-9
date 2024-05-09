@@ -36,7 +36,15 @@ class test(unittest.TestCase):
         response = requests.get(cls.records + '/12345678-M')
         id = json.loads(response.content)["_id"]
         requests.delete(cls.records + '/' + id)
-        
+
+        response = requests.get(cls.pacientes + '/12345678-G')
+        id = json.loads(response.content)["_id"]
+        requests.delete(cls.pacientes + '/' + id)
+
+        response = requests.get(cls.pacientes + '/12345678-M')
+        id = json.loads(response.content)["_id"]
+        requests.delete(cls.pacientes + '/' + id)
+
         del cls.datos_hora_bien
         del cls.datos_hora_sin_fecha
     
