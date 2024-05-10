@@ -38,15 +38,6 @@ router.post("/", async (req, res) => {
     // Insert into "horas" collection
     let collection = await db.collection("horas");
     let result = await collection.insertOne(newDocument);
-
-    // Insert "rut" and "name" into "paciente" collection
-    collection = await db.collection("pacientes");
-    let paciente = {
-      rut: req.body.rut,
-      name: req.body.name,
-      createdAt : new Date(),
-    };
-    result = await collection.insertOne(paciente);
     // Send response
     res.status(204).send();
   } catch (error) {
@@ -78,8 +69,8 @@ router.patch("/:id", async (req, res) => {
 });
 
 // This section will help you delete a record
-router.delete("/:id", async (req, res) => {
-  const query = { _id: new ObjectId(req.params.id) };
+router.delete("/:rut", async (req, res) => {
+  const query = { rut: req.params.rut };
 
   const collection = db.collection("horas");
   let result = await collection.deleteOne(query);

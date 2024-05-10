@@ -20,8 +20,20 @@ router.get("/:rut", async (req, res) => {
   else res.send(result).status(200);
 });
 
-router.delete("/:id", async (req, res) => {
-  const query = { _id: new ObjectId(req.params.id) };
+router.post("/", async (req, res) => {
+  let collection = await db.collection("pacientes");
+  let paciente = {
+    rut: req.body.rut,
+    name: req.body.name,
+    createdAt : req.body.createdAt,
+  };
+  let result = await collection.insertOne(paciente);
+  res.status(204).send();
+
+})
+
+router.delete("/:rut", async (req, res) => {
+  const query = { rut: req.params.rut };
 
   const collection = db.collection("pacientes");
   let result = await collection.deleteOne(query);
