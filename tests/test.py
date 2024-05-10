@@ -56,5 +56,13 @@ class test(unittest.TestCase):
         response = requests.post(self.records, json=self.datos_hora_sin_fecha)
         self.assertNotEqual(204, response.status_code)
 
+    def test_buscar_paciente_correcto(self):
+        response = requests.get(self.pacientes + '/' + '12345678-G')
+        self.assertNotEqual(response.content, b'Not found')
+
+    def test_buscar_paciente_incorrecto(self):
+        response = requests.get(self.pacientes + '/' + '12345678-M')
+        self.assertEqual(response.content, b'Not found')
+
 if __name__ == '__main__':
     unittest.main()
