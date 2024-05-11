@@ -29,6 +29,8 @@ Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurick
 Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-stack-tutorial)
 
 # Avance Hito 3
+* Se arreglo el problema que daba la HU5
+* Se implemento parte de la HU7
 
 
 ## Videos 2023-2
