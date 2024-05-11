@@ -31,6 +31,7 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 # Avance Hito 3
 * Se arreglo el problema que daba la HU5
 * Se implemento parte de la HU7
+* Se documentan los test realizados en la wiki [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki/Tablas-casos-de-prueba)
 
 
 ## Videos 2023-2
