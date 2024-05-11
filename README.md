@@ -21,6 +21,8 @@ Este proyecto es capaz de agendar y visualizar horas cuidando todas sus caracter
         (*)ERROR la base de datos puede estar inactiva, avisar y la subo
 
     2. en la dirrecion mern/client/ ejecutar "npm install" y "npm start"
+
+    Para ejecutar los test se debe estar en la carpeta /test y usar el comando python3 .\test_records.py y         python3.\test_pacientes.py  
  
 # Wiki
 Puede acceder a la wiki mediante el siguiente [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki)
