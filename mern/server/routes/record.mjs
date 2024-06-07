@@ -39,7 +39,9 @@ router.post("/", async (req, res) => {
     let collection = await db.collection("horas");
     let result = await collection.insertOne(newDocument);
     // Send response
-    res.status(204).send();
+    let is_complete = Object.values(newDocument).every(x => x != null);
+    if(is_complete) res.status(204).send();
+    else res.status(400).send();
   } catch (error) {
     // Handle errors
     console.error(error);
@@ -71,11 +73,14 @@ router.patch("/:id", async (req, res) => {
 // This section will help you delete a record
 router.delete("/:rut", async (req, res) => {
   const query = { rut: req.params.rut };
-
+  
   const collection = db.collection("horas");
+  let existe = await collection.findOne(query);
   let result = await collection.deleteOne(query);
 
-  res.send(result).status(200);
+
+  if (existe == null) res.status(400).send();
+  else res.status(204).send();
 });
 
 export default router;

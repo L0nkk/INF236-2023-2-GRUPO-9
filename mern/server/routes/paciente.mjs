@@ -27,9 +27,11 @@ router.post("/", async (req, res) => {
     name: req.body.name,
     createdAt : req.body.createdAt,
   };
+  let is_complete = Object.values(paciente).every(x => x != null);
   let result = await collection.insertOne(paciente);
-  res.status(204).send();
 
+  if(is_complete) res.status(204).send();
+  else res.status(400).send();
 })
 
 router.delete("/:rut", async (req, res) => {

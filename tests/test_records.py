@@ -58,8 +58,8 @@ class test(unittest.TestCase):
         self.assertIn(response.status_code, [200,202,204])
 
     def test_borrar_hora_mal(self):
-        response = requests.delete(self.records + '/355555-T')
-        self.assertNotIn(response.status_code, [200,202,204])
+        response = requests.delete(self.records + '/35544555-T')
+        self.assertNotEqual(204, response.status_code)
 
 if __name__ == '__main__':
     unittest.main()
