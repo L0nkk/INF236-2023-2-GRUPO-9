@@ -35,6 +35,11 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 * Se implemento parte de la HU7
 * Se documentan los test realizados en la wiki [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki/Tablas-casos-de-prueba)
 
+#Avances Hito 4
+* [Video Hito 4](https://youtu.be/ZaKgDk_pDi8)
+* La evaluación de arquitectura se menciona en el video y esta en la wiki [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki/Evaluaci%C3%B3n-de-Arquitectura)
+* Los cambios pedidos se hicieron en la branch test, en la carpeta test. 
+
 
 ## Videos 2023-2
 * [Video presentación Hito 1](https://www.youtube.com/watch?v=hvjuNG07QAA)
