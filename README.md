@@ -41,6 +41,7 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 * Los cambios pedidos se hicieron en la branch test, en la carpeta test.
 
 # Avances Hito 5
+* Inspección realizada en [Copia repositorio](https://github.com/L0nkk/test)
 * Realizamos la inspección en el programa registando lo pedido en la carperta [Inspections](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/tree/test/Inspections)
 * En la WIKI se hizo la documentación de lo arrojado por Sonarqube y los cambios en código que se hicieron [documentación](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/wiki/Inspecci%C3%B3n-de-C%C3%B3digo-con-Sonarqube)
 * Igualmente en la WIKI estan los diseños de pruebas en [JMeter tests](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/wiki/JMeter-tests)
