@@ -66,7 +66,6 @@ const buttonStyle = {
 
    fetchData();
 
-   return;
  }, [params.id, navigate]);
 
  // These methods will update the state properties.
