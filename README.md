@@ -38,7 +38,12 @@ Mern Stack code for the [Mern Tutorial](https://www.mongodb.com/languages/mern-s
 # Avances Hito 4
 * [Video Hito 4](https://youtu.be/ZaKgDk_pDi8)
 * La evaluación de arquitectura se menciona en el video y esta en la wiki [enlace](https://github.com/Zurickata/INF236-2023-2-GRUPO-9/wiki/Evaluaci%C3%B3n-de-Arquitectura)
-* Los cambios pedidos se hicieron en la branch test, en la carpeta test. 
+* Los cambios pedidos se hicieron en la branch test, en la carpeta test.
+
+# Avances Hito 5
+* Realizamos la inspección en el programa registando lo pedido en la carperta [Inspections](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/tree/test/Inspections)
+* En la WIKI se hizo la documentación de lo arrojado por Sonarqube y los cambios en código que se hicieron [documentación](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/wiki/Inspecci%C3%B3n-de-C%C3%B3digo-con-Sonarqube)
+* Igualmente en la WIKI estan los diseños de pruebas en [JMeter tests](https://github.com/L0nkk/INF236-2023-2-GRUPO-9/wiki/JMeter-tests)
 
 
 ## Videos 2023-2
